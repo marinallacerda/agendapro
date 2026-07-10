@@ -1,0 +1,147 @@
+<title>AgendaPro — Como Usar</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f3ff; color: #1e1b4b; }
+  .hero { background: linear-gradient(135deg, #7c3aed, #6d28d9, #4c1d95); color: white; padding: 48px 24px; text-align: center; }
+  .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 8px; }
+  .hero p { font-size: 1.1rem; opacity: 0.85; }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+  .card { background: white; border-radius: 16px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(124,58,237,0.08); border: 1px solid #ede9fe; }
+  .card h2 { font-size: 1.3rem; font-weight: 700; color: #6d28d9; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .step { display: flex; gap: 16px; margin-bottom: 16px; align-items: flex-start; }
+  .step-num { width: 36px; height: 36px; background: #7c3aed; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; font-size: 0.9rem; }
+  .step-content h3 { font-weight: 600; margin-bottom: 4px; }
+  .step-content p { color: #6b7280; font-size: 0.9rem; line-height: 1.5; }
+  code { background: #f3f0ff; color: #6d28d9; padding: 2px 8px; border-radius: 6px; font-family: monospace; font-size: 0.85rem; }
+  .code-block { background: #1e1b4b; color: #a78bfa; padding: 16px 20px; border-radius: 12px; font-family: monospace; font-size: 0.9rem; margin: 12px 0; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; background: #ede9fe; color: #6d28d9; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .feature { background: #f5f3ff; border-radius: 12px; padding: 20px; text-align: center; }
+  .feature .icon { font-size: 2rem; margin-bottom: 8px; }
+  .feature h3 { font-weight: 600; font-size: 0.95rem; color: #4c1d95; }
+  .feature p { font-size: 0.8rem; color: #7c3aed; margin-top: 4px; }
+  .highlight { background: #faf5ff; border-left: 4px solid #7c3aed; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 0.9rem; }
+  a.btn { display: inline-block; background: #7c3aed; color: white; padding: 12px 28px; border-radius: 12px; text-decoration: none; font-weight: 600; margin-top: 8px; }
+  h2 .badge { font-size: 0.75rem; }
+</style>
+
+<div class="hero">
+  <div style="font-size:3rem;margin-bottom:12px">💅</div>
+  <h1>AgendaPro</h1>
+  <p>Sistema de agendamento profissional para salões, clínicas e serviços em geral</p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>🚀 Como iniciar</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>Dê duplo clique em <code>iniciar.bat</code></h3>
+        <p>Abre automaticamente o servidor (porta 3001) e a interface (porta 5173) em duas janelas separadas.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>Acesse no navegador</h3>
+        <p>O sistema vai abrir automaticamente em <code>http://localhost:5173</code></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>Crie sua conta</h3>
+        <p>Clique em "Criar agora" e preencha seu nome, nome do negócio, email e senha.</p>
+      </div>
+    </div>
+    <div class="highlight">
+      ⚠️ Mantenha as duas janelas abertas (servidor e interface) enquanto usar o sistema.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✨ Funcionalidades</h2>
+    <div class="features">
+      <div class="feature"><div class="icon">🔐</div><h3>Login seguro</h3><p>Autenticação com JWT</p></div>
+      <div class="feature"><div class="icon">✂️</div><h3>Serviços</h3><p>Cadastre procedimentos, preços e durações</p></div>
+      <div class="feature"><div class="icon">🕐</div><h3>Horários</h3><p>Configure dias e horas de atendimento</p></div>
+      <div class="feature"><div class="icon">📅</div><h3>Agendamentos</h3><p>Visualize e gerencie todos os agendamentos</p></div>
+      <div class="feature"><div class="icon">🔗</div><h3>Link público</h3><p>Clientes agendam sozinhos pelo link</p></div>
+      <div class="feature"><div class="icon">💳</div><h3>PIX</h3><p>QR Code e copia-e-cola automáticos</p></div>
+      <div class="feature"><div class="icon">📱</div><h3>WhatsApp</h3><p>Lembretes automáticos via Evolution API</p></div>
+      <div class="feature"><div class="icon">📊</div><h3>Dashboard</h3><p>Resumo do dia, semana e mês</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📋 Fluxo de uso</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>Configure seus serviços</h3>
+        <p>Menu <strong>Serviços</strong> → adicione manicure, pedicure, lazer, limpeza de pele, etc. com nome, duração e preço.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>Configure seus horários</h3>
+        <p>Menu <strong>Horários</strong> → ative os dias da semana e defina o horário de atendimento. Bloqueie datas específicas.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>Configure PIX e WhatsApp</h3>
+        <p>Menu <strong>Configurações</strong> → aba PIX: adicione sua chave. Aba WhatsApp: configure a Evolution API.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h3>Compartilhe seu link de agendamento</h3>
+        <p>No <strong>Dashboard</strong>, copie seu link e envie para clientes. Eles vão ver os serviços, escolher horário e pagar pelo PIX.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📱 WhatsApp — Configuração <span class="badge">Opcional</span></h2>
+    <p style="color:#6b7280;margin-bottom:16px">Para enviar lembretes automáticos, você precisa da <strong>Evolution API</strong> (gratuita e open source).</p>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>Instale a Evolution API</h3>
+        <p>Siga a documentação em <code>github.com/EvolutionAPI/evolution-api</code></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>Configure no sistema</h3>
+        <p>Menu <strong>Configurações</strong> → aba WhatsApp → preencha URL, API Key e instância → ative os lembretes desejados.</p>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 Os lembretes são enviados automaticamente: <strong>24h antes</strong> e <strong>1h antes</strong> do agendamento.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>💳 PIX — Como funciona</h2>
+    <p style="color:#6b7280;margin-bottom:16px">Após o cliente agendar, o sistema gera automaticamente um QR Code e o código copia-e-cola do PIX.</p>
+    <div class="highlight">
+      O valor cobrado é o preço do serviço configurado. O QR Code é gerado seguindo o padrão oficial BACEN/EMVCo.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🌐 Usando em rede local (outros dispositivos)</h2>
+    <p style="color:#6b7280;margin-bottom:12px">Para acessar de celulares ou outros computadores na mesma rede Wi-Fi:</p>
+    <div class="code-block">ipconfig  →  anote o IP local (ex: 192.168.1.100)</div>
+    <p style="color:#6b7280;font-size:0.9rem">No celular, acesse: <code>http://192.168.1.100:5173/agendar/seu-slug</code></p>
+  </div>
+
+</div>
