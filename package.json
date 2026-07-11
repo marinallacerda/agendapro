@@ -9,7 +9,7 @@
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
     "build": "cd server && npm run build && cd ../client && npm run build",
     "start": "cd server && npm start",
-    "render:build": "cd client && npm install && npm run build && cd ../server && npm install && npm run build",
+    "render:build": "cd client && npm install && npm run build && cd ../server && npm install --include=dev && npm run build",
     "render:start": "node server/dist/index.js"
   },
   "devDependencies": {
